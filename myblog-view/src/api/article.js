@@ -94,3 +94,15 @@ export const Mynotes = () => {
         method:'get',
 })
 }
+
+//搜索
+export const Search = (key) => {
+    return request ({
+        url:'/api/search',
+        method:'post',
+        data:{
+            key
+        }
+})
+}
+

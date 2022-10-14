@@ -60,6 +60,8 @@ img{
     width: 70px;
     height: 35px;
 }
-
+.ui.inverted.segment{
+    z-index: 999;
+}
 </style>
     

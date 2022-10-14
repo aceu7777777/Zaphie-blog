@@ -11,5 +11,7 @@ router.post('/good', ArticleHandler.good)
 router.get('/articleD', ArticleHandler.articleD)
 //请求我的笔记数据
 router.get('/notes', ArticleHandler.notes)
+//搜索请求
+router.post('/search', ArticleHandler.search)
 //将路由对象共享出去 
 module.exports = router

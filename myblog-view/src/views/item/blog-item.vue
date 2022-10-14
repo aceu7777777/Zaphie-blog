@@ -13,8 +13,8 @@
                     <div class="extra content">
                         <br>
                         <span class="description GitHub">GitHub:</span>
-                            <a href="https://github.com/aceu7777777/paotui" target="_blank">
-                                下次一定队项目仓库
+                            <a href="https://github.com/aceu7777777/Zaphie-blog" target="_blank">
+                                https://github.com/aceu7777777/Zaphie-blog
                             </a>
                     </div>
                     <div class="ui divider"></div>

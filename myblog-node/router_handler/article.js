@@ -78,3 +78,21 @@ exports.notes = (req, res) => {
         })
     })
 }
+
+
+
+//搜索本站文章
+//问题 为啥get发亲求打印出来请求体的key是undefined 而post不是
+//get没有请求体
+exports.search = (req, res) => {
+    str = `select * from article where title like ?`
+    db.query(str , `%${req.body.key}%`, (err, results) => {   
+        if (err) return res.cc(err)
+        //if (results.affectedRows !== 1) return res.cc('请求文章失败！')
+        res.send({
+            status: 0,
+            message: '请求成功！',
+            data: results,
+        })
+    })
+}

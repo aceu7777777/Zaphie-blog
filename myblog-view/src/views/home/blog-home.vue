@@ -15,8 +15,11 @@
                 <Crad />
                 <!-- main面板 -->
                 <Main />
-                <!-- 欢迎语 -->
-                <Welcome />
+                <!-- 欢迎语 与搜索-->
+                <div>
+                    <Welcome />
+                    <Search class="search"/>
+                </div>
             </div>
         </div>
 
@@ -26,10 +29,11 @@
 import Crad from "@/views/home/components/home-card.vue";
 import Main from "@/views/home/components/home-main.vue";
 import Welcome from "@/views/home/components/home-welcome.vue";
+import Search from "@/views/home/components/home-search.vue";
 import { useStore } from 'vuex'
 import { onMounted } from 'vue'
 export default {
-    components: { Crad, Main, Welcome },
+    components: { Crad, Main, Welcome,Search },
     setup() {
         const store = useStore()
         const scrollFn = () => {
@@ -66,6 +70,10 @@ export default {
     .flex {
         display: flex;
         padding-top: 20px;
+        .search{
+            padding-top: 20px;
+            padding-left: 10px;
+        }
     }
 }
 
