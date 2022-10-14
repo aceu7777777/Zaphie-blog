@@ -2,12 +2,12 @@
 <div class="flex-wrapper">
     <div class="notes-flex">
         <!-- 名片 -->
-        <Crad/>
+        <Crad class="crad"/>
         <!-- 内容 -->
         <Main/>
         <div>
         <!-- 推荐网站 -->
-        <Recommend/>
+        <Recommend class="recommend"/>
         <!-- 摸鱼网站 -->
         </div>
     </div>
@@ -34,5 +34,15 @@ setup() {
     .notes-flex{
         display: flex;
     }
+}
+
+
+@media only screen and (max-width:750px){
+.crad{
+    display: none;
+}
+.recommend{
+    display: none;
+}
 }
 </style>

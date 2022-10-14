@@ -55,13 +55,24 @@ export default {
     }
 }
 </script>
-<style lang="less">
+<style lang="less" scoped>
 img{
     width: 70px;
     height: 35px;
 }
 .ui.inverted.segment{
     z-index: 999;
+}
+@media only screen and (max-width: 750px){
+img{
+    display: none;
+}
+a{
+    font-size: 10px;
+}
+.ui.inverted.segment{
+    height: 50px;
+}
 }
 </style>
     

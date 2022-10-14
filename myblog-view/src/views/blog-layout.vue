@@ -4,7 +4,9 @@
     <BlogHeader></BlogHeader>
     <BlogHeaders />
     <!-- 二级路由 -->
-    <router-view/>
+    <keepAlive>
+        <router-view/>   
+    </KeepAlive>
     <!-- 尾部 -->
     <BlogFooter></BlogFooter>
     </div>

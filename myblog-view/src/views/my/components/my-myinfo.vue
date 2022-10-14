@@ -1,6 +1,7 @@
 <template>
+<div class="shouji">
 <div class="ui raised very padded text container segment">
-    <h2 class="ui header">菜勾Zaphie</h2>
+    <h2 class="ui header">情报</h2>
     <div class="tiele">Zaphie</div>
     <div class="ui divider"></div>
     <ul class="ui list">
@@ -17,16 +18,25 @@
         目前此博客部署在腾讯云
     </div>
 </div>
+</div>
 </template>
 <script lang="ts">
 
 </script>
 <style lang="less" scoped>
-.ui.header{
-    padding-left: 240px;
-}
+
 .tiele{
     color: #000;
     font-size: 22px;
+}
+@media only screen and (max-width: 450px){
+.ui.raised.very.padded.text.container.segment{
+    max-width: 400px!important;
+    min-width:300px!important;
+}
+.shouji{
+    display: flex;
+    justify-content: center;
+}
 }
 </style>

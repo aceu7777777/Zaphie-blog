@@ -20,7 +20,7 @@
         </div>
         <div class="seven wide column">
         <h4 class="ui inverted header">I have to win, too</h4>
-        <p>想那么多没用的干什么,干就完了！</p>
+        <p>我也是非赢不可</p>
         </div>
         <h4 class="ui inverted header">感谢浏览</h4>
         
@@ -40,4 +40,5 @@
 .ui.inverted.vertical.footer.segment{
     z-index: 0;
 }
+
 </style>

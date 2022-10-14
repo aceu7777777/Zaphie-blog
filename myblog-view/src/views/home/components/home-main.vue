@@ -34,6 +34,7 @@
     </div>
 </template>
 <script>
+import Message from '@/components/library/Message'
 import { Allarticle } from "@/api/article";
 import { Good, Page } from "@/api/article";
 import Bpage from '@/components/blog-page.vue'
@@ -52,6 +53,7 @@ export default {
             item.isgood = 1
             Good(item.id)
             item.good++
+            Message({ type: 'success', text: '谢谢你的点赞' })
         }
         //分页
         let total = computed(() => {

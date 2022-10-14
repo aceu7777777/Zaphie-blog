@@ -1,12 +1,12 @@
 <template>
 <div class="flex-wrapper"> 
     <div class="my-flex">
-    <Crad/>
+    <Crad class="crad"/>
     <div class="myinfo">
         <Myinfo/>
         <Comment class="mycomment"/> 
     </div>
-    <Welcome/>
+    <Welcome class="welcome"/>
     </div>
 </div>
 </template>
@@ -40,5 +40,13 @@ components:{Comment, Crad, Welcome,Myinfo},
     flex-direction: column;
     padding-left: 15px;
     padding-right: 15px;
+}
+@media only screen and (max-width: 750px){
+.crad{
+    display: none;
+}
+.welcome{
+    display: none;
+}
 }
 </style>

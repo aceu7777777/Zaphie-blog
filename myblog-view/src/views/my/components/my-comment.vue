@@ -152,8 +152,6 @@ export default {
                     //这里改到1000就解决了    155bug
                 }, 1500);
                 page.value = 1
-                //发送完刷新 因为有bug未解决(在第一页发完数据的时候 再请求更新数据的时候148行 更新不到)
-                //location.reload()
                 Message({ type: 'success', text: '成功留下足迹！' })
                 dis.value = true
             }else{
@@ -237,14 +235,7 @@ export default {
                     console.log(data);
                 })
                 })
-                
-
                 Message({ type: 'success', text: '成功回复' })
-                //console.log('ok');
-                //console.log(ids.value);
-                //console.log(replyrequest.replyecontent);
-                //console.log(replys.value);
-                //console.log(JSON.stringify(treplys));
                 disl.value = true
             }else{
                 //校验失败
@@ -300,6 +291,7 @@ export default {
     padding-bottom: 30px;
 }
 .control{
+    padding-top: 20px;
     display: flex;
     justify-content: center;
 }
@@ -324,5 +316,10 @@ export default {
 }
 .button{
     padding-bottom: 10px;
+}
+@media only screen and (max-width: 750px){
+    .control{
+        width: 360px;
+    }
 }
 </style>

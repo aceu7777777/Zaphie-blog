@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <!--引入semantic的css-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
@@ -33,6 +34,20 @@
         list-max-height="500px"
         lrc-type="1">
   </meting-js>
+
+  <script type="text/javascript">
+    /* 手机打开提示 */
+    var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
+    var browser = navigator.userAgent.toLowerCase();
+    var isMobile = false;
+    for (var i = 0; i < mobileAgent.length; i++) {
+        if (browser.indexOf(mobileAgent[i]) != -1) {
+            isMobile = true;
+            alert("本博客手机打开适配并不齐全(问就是懒),建议用电脑访问效果更佳!点击确定继续使用手机浏览");
+            break;
+        }
+    }
+  </script>
 
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>

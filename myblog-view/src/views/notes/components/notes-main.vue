@@ -8,7 +8,6 @@
         <div class="description">{{item.date}}</div>
         </div>
     </div>
-
     </div>
 </div>
 </template>
@@ -43,5 +42,10 @@ setup() {
     width: 800px;
     padding-left: 20px;
     padding-right: 20px;
+}
+@media only screen and (max-width: 750px){
+.ui.relaxed.divided.list{
+    width: 400px;
+    }
 }
 </style>

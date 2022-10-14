@@ -12,11 +12,11 @@
         <!-- 我的名片 -->
         <div class="flex-wrapper">
             <div class="flex">
-                <Crad />
+                <Crad class="crad"/>
                 <!-- main面板 -->
                 <Main />
                 <!-- 欢迎语 与搜索-->
-                <div>
+                <div class="wands">
                     <Welcome />
                     <Search class="search"/>
                 </div>
@@ -80,5 +80,18 @@ export default {
 
 .c {
     width: 100%;
+}
+//air平板和手机
+@media only screen and (max-width: 750px) {
+    .crad{
+        display: none;
+
+    }
+    .wands{
+        display: none;
+    }
+    .control{
+        display: none;
+    }
 }
 </style>
